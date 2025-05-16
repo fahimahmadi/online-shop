@@ -1,0 +1,26 @@
+
+# Backend Server
+APP = OnlineShop
+# ADDRESS = Berlin, Germany
+OWNER = John Doe
+BASE_URL = http://localhost
+PORT = 3000
+
+# Mail Server
+MAIL_SERVER_HOST = smtp.mail.de
+MAIL_SERVER_PORT = 587
+MAIL_SERVER_USER = john@mail.de
+MAIL_SERVER_PASSWORD = John123!
+
+# Database Server
+MONGO_USER = admin
+MONGO_PASS = admin123!
+MONGO_DB = onlineshop
+MONGO_URI = mongodb+srv://<db_username>:<db_password>@cluster0.mklqq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+# JWT
+JWT_SECRET = ThisIsASecretKeyForJWT
+
+# FrontEnd Server
+FE_BASE_URL = http://localhost:3001

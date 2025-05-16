@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Verification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px #cccccc;
+      }
+      .btn {
+        background-color: #28a745;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome to [Our_Website]!</h2>
+      <p>Hi <strong>{{user}}</strong>,</p>
+      <p>
+        Thank you for registering at our store. To complete your registration,
+        please verify your email address by clicking the button below:
+      </p>
+
+      <a class="btn" href="{{verificationLink}}" target="_blank"
+        >Verify Email</a
+      >
+      <p>
+        or copy the following link and <code>paste</code> it into the address
+        bar of your browser.
+      </p>
+      <code>{{verificationLink}}</code>
+      <p>If you did not create this account, you can ignore this email.</p>
+      <div class="footer">
+        <p>
+          <span id="year"></span>
+          <span id="site">[Your Store Name]</span>. All rights reserved.
+        </p>
+        <p id="address">[Your Store Address or Website]</p>
+      </div>
+    </div>
+
+    <script>
+      const current_year = new Date().getFullYear();
+      const site_name = "MyOnlineShop";
+      const address = "Düsseldorf, Deutschland";
+      document.getElementById("year").textContent = current_year;
+      document.getElementById("site").textContent = site_name;
+      document.getElementById("address").textContent = address;
+    </script>
+  </body>
+</html>

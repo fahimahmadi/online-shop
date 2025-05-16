@@ -1,0 +1,16 @@
+body{
+    justify-content: center;
+    align-items: start;
+    padding-top: 3em;
+    border: 1px solid #eee;
+}
+
+.login-form{
+    display: flex;
+    gap: 2em;
+}
+
+.login-form input{
+    width: 200px;
+    height: 30px;
+}
